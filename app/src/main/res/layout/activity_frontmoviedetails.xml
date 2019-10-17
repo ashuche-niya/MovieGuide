@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/frontmoviedetailslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/frontmovieimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:src="@drawable/moiveimage" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/moviename"
+        android:text="John Wick: Chapter 3- parabellum"
+        android:textSize="30dp" />
+
+    <TextView
+        android:paddingVertical="8dp"
+        android:id="@+id/releasingdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2019-05-15"
+        android:textSize="16dp" />
+
+    <TextView
+
+        android:id="@+id/movierating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7.5"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Summary"
+        android:textColor="@android:color/black"
+        android:textSize="28dp" />
+
+    <TextView
+
+        android:id="@+id/moviesummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Super-assassin John Wick returns with a $14 million price tag on his head and anarmy of bounty-hunting killers on his trail. After killing a member of the shadowy internationalassassin’s guild, the High Table, John Wick is excommunicado, but the world’s most ruthless hitmen and women await his every turn." />
+    <Button
+        android:id="@+id/btnplaytrailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Movie Trailer"/>
+
+    <view
+        app:cardCornerRadius="4dp"
+        android:layout_marginVertical="16dp"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/youtubevideoview"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+         />
+
+</LinearLayout>
+</ScrollView>
